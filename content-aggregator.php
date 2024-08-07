@@ -9,10 +9,9 @@
  */
 
 // Подключение файлов
-require_once plugin_dir_path(__FILE__) . 'includes/load-html.php';
-require_once plugin_dir_path(__FILE__) . 'includes/parse-content.php';
-require_once plugin_dir_path(__FILE__) . 'includes/create-post.php';
+
 require_once plugin_dir_path(__FILE__) . 'includes/admin-menu.php';
+
 
 // Регистрация кастомного типа постов и таксономии
 function custom_news_post_type() {
@@ -37,7 +36,7 @@ function custom_news_post_type() {
         'labels'             => $labels,
         'description'        => 'News posts for the site',
         'public'             => true,
-        'menu_position'      => 5,
+        'menu_position'      => 2,
         'menu_icon'          => 'dashicons-welcome-widgets-menus',
         'supports'           => array( 'title', 'editor', 'thumbnail', 'excerpt', 'custom-fields' ),
         'has_archive'        => true,

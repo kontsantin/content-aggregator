@@ -1,0 +1,10 @@
+{
+    "require": {
+         "popov654/php-html-parser": "dev-master"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.30"
+        }
+    }
+}
